@@ -39,6 +39,16 @@ pen2.left(5)
 pen2.fd(50)
 pen2.down
 
+colors = ["red" , "purple", "yellow", "green"]
+for color in colors:
+    pen.color(color)
+    for _ in range(4):
+        pen.left(90)
+        pen.forward(50)
+    pen.up()
+    pen.forward(100)
+    pen.down()
+
 pen2.home() #goes home
 
 pen.goto(0,0) #goes to points
