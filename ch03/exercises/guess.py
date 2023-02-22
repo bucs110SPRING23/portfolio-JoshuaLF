@@ -21,3 +21,7 @@ while userG != randNum:
     if i == 3:
         print("Too many tries. The number was:",randNum)
         break
+
+
+""" or you could just use a for loop that says 'for i in range(3)'
+that would stop it automatically after 3 instead of i += 1 """
