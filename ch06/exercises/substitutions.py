@@ -1,15 +1,18 @@
 import json
 
-def main():
-    subs_file = json.load(open("subs.json", "r"))
-    subs_test = json.dumps(subs_file)
+def main():    
+    text = open("ch06/exercises/news.txt", "r").read().lower()
 
-    news_file = json.load(open("news.txt", "r"))
+    subs_file = open("ch06/exercises/subs.json", "r")
+    subs = json.load(subs_file)
+    print(subs)
 
+    for k, v in subs.items():
+        text = text.replace(k, v)
+        print(text)
 
-    betterNews = open("betternews.txt", "w")
+    betterNews = open("ch06/exercises/betternews.txt", "w")
+    betterNews.write(text)
+    betterNews.close()
 
-    while news_file.:
-        print(str)
-        for str in news_file.read():
-            if str.
+main()
