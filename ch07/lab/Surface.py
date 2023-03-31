@@ -20,7 +20,7 @@ class Surface:
 
     def getRect(self):
         """
-        Returns the rectangle object associated with the surface.
+        Returns the rectangle object linked with the surface.
 
         Returns:
         Rectangle
